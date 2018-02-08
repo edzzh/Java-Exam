@@ -55,7 +55,8 @@ public class helpers {
     }
     
     public static void writeLog(String msg){
+        Date dt = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_hh:mm:ss");
-        System.out.println(sdf + " : " + msg);
+        System.out.println(sdf.format(dt) + " : " + msg);
     }
 }
