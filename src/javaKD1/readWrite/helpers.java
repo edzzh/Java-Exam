@@ -7,6 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -54,6 +55,7 @@ public class helpers {
     }
     
     public static void writeLog(String msg){
-        System.out.println(new Date() + " : " + msg);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_hh:mm:ss");
+        System.out.println(sdf + " : " + msg);
     }
 }
